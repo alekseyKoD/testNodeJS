@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Практика: События мыши</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .control-panel {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        #magic-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease; /* Плавность анимации */
+        }
+        #status-text {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="control-panel">
+        <h2>Панель управления</h2>
+        <!-- Элемент, с которым будем работать -->
+        <button id="magic-btn">Нажми меня</button>
+        <p id="status-text">Статус: Ожидание...</p>
+    </div>
+
+    <!-- Скрипт подключаем в конце body -->
+    <script src="script.js"></script>
+</body>
+</html>
